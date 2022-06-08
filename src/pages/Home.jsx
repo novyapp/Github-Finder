@@ -1,11 +1,14 @@
-import React from 'react'
-import UserResults from '../components/users/UserResults'
+import React, { Fragment } from "react";
+import UserSearch from "../components/users/UserSearch";
+import UserResults from "../components/users/UserResults";
 
 function Home() {
   return (
-      /* search */
-        <UserResults />
-  )
+    <Fragment>
+      <UserSearch />
+      <UserResults />
+    </Fragment>
+  );
 }
 
-export default Home
+export default Home;
