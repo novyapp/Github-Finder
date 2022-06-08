@@ -13,6 +13,7 @@ export default function User() {
   useEffect(() => {
     getUser(params.login);
     getRepos(params.login);
+    
   }, []);
 
   console.log(user);
